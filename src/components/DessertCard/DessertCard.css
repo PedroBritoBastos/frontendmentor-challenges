@@ -1,0 +1,37 @@
+.image-button { /* container */
+  height: 18em;
+  position: relative;
+}
+
+.foodImage {
+  display: block;
+  width: 100%;
+  height: 235px;
+}
+
+.addToCard { /* botao */
+  display: inline-flex;
+  background-color: rgb(243, 242, 221);
+  padding: .5em 1.5em;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;  
+  transform: translateX(-50%);
+  bottom: 12%;
+  gap: 2.8px;
+  font-weight: 500;
+}
+
+.information-container p:nth-child(1) {
+  font-weight: 500;
+  font-size: .8em;
+}
+
+.information-container p:nth-child(2) {
+  font-weight: 600;
+}
+
+.information-container p:nth-child(3) {
+  font-weight: 700;
+  font-size: 1.2em;
+}

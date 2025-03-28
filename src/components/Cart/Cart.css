@@ -1,0 +1,25 @@
+.cart {
+  box-sizing: border-box;
+  height: fit-content;
+  border-radius: 15px;
+}
+
+.carbonNeutral {
+  display: flex;
+  gap: .5em;
+  width: fit-content;
+  padding: .8em 1em;
+  border-radius: 10px;
+}
+
+.cartConfirmButton {
+  min-width: 15em;
+  max-width: 18em;
+  padding: .8em 0;
+  border-radius: 25px;
+}
+
+.cartTotalPrice {
+  font-size: 1.6em;
+  font-weight: 700;
+}

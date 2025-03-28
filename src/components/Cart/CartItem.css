@@ -1,0 +1,5 @@
+.cartItem {
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid hsla(12, 20%, 44%, 0.514);
+}

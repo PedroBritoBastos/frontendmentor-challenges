@@ -1,0 +1,48 @@
+.title-big {
+  font-size: 2em;
+}
+
+.color-dark {
+  color: hsl(14, 65%, 9%);
+}
+
+.dessertsTableTitle {
+  font-size: 2em;
+}
+
+.dessertsTableTitle, .dessertName, .addToCartTitle, .cartItemName {
+  color: hsl(14, 65%, 9%);
+}
+
+.dessertCategory, .cartItemPrice, .cartItemDeleteIcon, .cartOrderTotal {
+  color: hsl(12, 20%, 44%);
+}
+
+.dessertPrice, .cartItemQuantity, .cartTitle {
+  color: hsl(14, 86%, 42%);
+}
+
+.itemBackground {
+  background-color: hsl(13, 31%, 94%);
+}
+
+.buttonBackgroundOrange {
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(20, 50%, 98%);
+}
+
+.lightBackground {
+  background-color: hsl(0, 0%, 100%)
+}
+
+.cart, .modal {
+  padding: 2em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.semiBold {
+  font-weight: 500;
+}
