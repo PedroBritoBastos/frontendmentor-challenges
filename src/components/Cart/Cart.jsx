@@ -8,7 +8,9 @@ const Cart = ({children}) => {
   return (
     <div className='lightBackground cart'>
       <h1 className='title-big cartTitle bold'>Your Cart</h1>
-      {children} 
+
+      {children}
+       
       <Box display='flex' justifyContent='space-around' alignItems='center' padding='1em 0 2em 0'>
         <p className='cartOrderTotal bold'>Order Total</p>
         <p className='cartTotalPrice'>$total</p>

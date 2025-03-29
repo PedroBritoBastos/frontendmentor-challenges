@@ -16,7 +16,7 @@ import {foods} from './data/foods.js';
 import './App.css'
 
 function App() {
-  const cards = foods.map((food) => <DessertCard image={food.image} category={food.category} name={food.name} price={food.price}/>)
+  const cards = foods.map((food) => <DessertCard key={Math.random() * 2} image={food.image} category={food.category} name={food.name} price={food.price}/>)
   
   const [active, setActive] = useState(false);
 

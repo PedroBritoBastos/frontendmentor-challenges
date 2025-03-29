@@ -19,6 +19,17 @@ const DessertCard = ({image, category, name, price}) => {
   const dessertNameRef = useRef(null);
   const dessertPrice = useRef(null);
 
+  const createProduct = () => {
+    const productInfo = {
+      productName: dessertNameRef.current.innerText,
+      productPrice: dessertPrice.current.innerText,
+      count: 1
+    }
+
+    return productInfo;
+  }
+  
+
   return (
     <>
       <Box marginBottom={"4em"} >
@@ -28,11 +39,8 @@ const DessertCard = ({image, category, name, price}) => {
 
           <img src={image} alt="imagem" className="foodImage"/>
 
-          {active ? <ActiveButton setActive={setActive} productInfo={{
-                productName: dessertNameRef.current.textContent,
-                productPrice: dessertPrice.current.textContent
-          }}/> : 
-            <AddButton setActive={setActive} />
+          {active ? <ActiveButton setActive={setActive} createProduct={createProduct}/> : 
+            <AddButton setActive={setActive} createProduct={createProduct}/>
           }
           
         </div>

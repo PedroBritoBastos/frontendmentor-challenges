@@ -5,10 +5,10 @@ export const CartContext = createContext({});
 export const CartContextProvider = ({children}) => {
 
   // estados de cada produto que vai ser usado para criar um dessertItem
-  const [productsList, setProductList] = useState([]);
+  const [productList, setProductList] = useState([]);
 
   return (
-    <CartContext.Provider value={{productsList, setProductList}}>
+    <CartContext.Provider value={{productList, setProductList}}>
       {children}
     </CartContext.Provider>
   )
