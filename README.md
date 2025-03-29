@@ -1,12 +1,16 @@
-# React + Vite
+# Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi feito utilizando a plataforma Frontendmentor para ter o design como base. A ideia do projeto foi praticar os conceitos de React e aprimorar as minhas habilidades em CSS. O projeto está completamente funcional.
 
-Currently, two official plugins are available:
+![Foto projeto](https://github.com/user-attachments/assets/9740d637-64f3-4466-a926-b4220caf2020)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- ReactJS
+- Chakra-UI
+- Javascript
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Para testar o projeto:
+
+Acesse o link: 
+
