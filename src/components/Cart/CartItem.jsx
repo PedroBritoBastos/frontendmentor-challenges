@@ -1,12 +1,12 @@
 import './CartItem.css'
 
-const CartItem = () => {
+const CartItem = ({info}) => {
   return (
     <>
-      <li className="cartItem">
-        <p className="cartItemName bold">Nome</p>
-        <p className="cartItemPrice"><span className="cartItemQuantity">1x</span> @$valorunit $valortotal</p>
-      </li>
+      {info && <li className="cartItem">
+        <p className="cartItemName bold">{info.productName}</p>
+        <p className="cartItemPrice"><span className="cartItemQuantity">{info.count}x</span> @${info.productPrice} $valortotal</p>
+      </li> }
     </>
   )
 }

@@ -1,7 +1,7 @@
-import { Box, Button } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 
 // hooks
-import { useContext, useState, useRef } from "react"
+import { useState, useRef } from "react"
 
 // style
 import './DessertCard.css'
