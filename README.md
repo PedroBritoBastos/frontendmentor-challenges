@@ -6,11 +6,12 @@ Este projeto foi feito utilizando a plataforma Frontendmentor para ter o design 
 
 # Tecnologias utilizadas
 
-- ReactJS
+- ReactJS com Vite
 - Chakra-UI
 - Javascript
 
 # Para testar o projeto:
 
-Acesse o link: 
+1. baixe ou clone o repositório
+2. No VSCode, digite npm run dev
 
