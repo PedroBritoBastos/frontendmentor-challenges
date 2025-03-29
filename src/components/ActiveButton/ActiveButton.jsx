@@ -1,5 +1,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { CartContext } from '../../context/CartContext';
+import decrementIcon from '../../assets/images/icon-decrement-quantity.svg'
+import incrementIcon from '../../assets/images/icon-increment-quantity.svg'
 import './ActiveButton.css'
 
 const ActiveButton = ({setActive, createProduct}) => {
@@ -43,10 +45,14 @@ const ActiveButton = ({setActive, createProduct}) => {
 
   return (
     <>
-      <div className="addToCard activeButton">
-        <button onClick={decrement}>-</button>
-        <p>{count}</p>
-        <button onClick={increment}>+</button>
+      <div className="addToCard activeButton" style={{backgroundColor: 'hsl(14, 86%, 42%)'}}>
+        <button onClick={decrement}>
+          <img src={decrementIcon} alt="" />
+        </button>
+          <p>{count}</p>
+        <button onClick={increment}>
+          <img src={incrementIcon} alt="" />
+        </button>
       </div>
     </>
   )
