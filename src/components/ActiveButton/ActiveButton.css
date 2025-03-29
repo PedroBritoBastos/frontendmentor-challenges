@@ -1,0 +1,6 @@
+.activeButton {
+  width: 8em;
+  justify-content: space-around;
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(20, 50%, 98%);
+}
