@@ -22,7 +22,7 @@ const DessertCard = ({image, category, name, price}) => {
   const createProduct = () => {
     const productInfo = {
       productName: dessertNameRef.current.innerText,
-      productPrice: dessertPrice.current.innerText,
+      productPrice: dessertPrice.current.innerText.replace("$", "").trim(),
       count: 1
     }
 

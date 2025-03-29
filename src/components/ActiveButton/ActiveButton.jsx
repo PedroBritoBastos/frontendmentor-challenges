@@ -25,7 +25,11 @@ const ActiveButton = ({setActive, createProduct}) => {
 
       setProductList(list);
       setActive(false);
-    } 
+    } else {
+      const list = [].concat(productList);
+      list.map(item => (item.productName === currentProduct.productName) ? item.count = count : item);
+      setProductList(list);
+    }
   }, [count]);
 
   // decrementa o contador
