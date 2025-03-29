@@ -1,16 +1,15 @@
 import carbonNeutralIcon from '../../assets/images/icon-carbon-neutral.svg';
-
-import { Box } from '@chakra-ui/react';
-
-import './Cart.css'
-
+import { Box, useControllableProp } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { TfiBoltAlt } from 'react-icons/tfi';
+import { ModalContext } from '../../context/ModalContext';
+import './Cart.css'
 
 const Cart = ({children}) => {
   const {productList} = useContext(CartContext);
   const [total, setTotal] = useState(0);
+  const {setTotalOrder} = useContext(ModalContext);
+  const {setVisible} = useContext(ModalContext);
 
   useEffect(() => {
     let totalPrice = 0;
@@ -23,6 +22,13 @@ const Cart = ({children}) => {
 
     setTotal(totalPrice);
   }, [productList])
+
+  const handleClick = () => {
+    if(total > 0) {
+      setTotalOrder(total);
+      setVisible(true);
+    }
+  }
 
   return (
     <div className='lightBackground cart'>
@@ -40,7 +46,7 @@ const Cart = ({children}) => {
           <img src={carbonNeutralIcon} alt="" />
           <p>This is a carbon-neutral delivery</p>
         </div>
-        <button className='cartConfirmButton buttonBackgroundOrange'>
+        <button className='cartConfirmButton buttonBackgroundOrange' onClick={handleClick}>
           Confirm order
         </button>
       </Box>

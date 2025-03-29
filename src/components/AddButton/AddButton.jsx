@@ -1,7 +1,4 @@
-
-// icons
 import addToCart from '../../assets/images/icon-add-to-cart.svg'
-
 import { useContext, useEffect } from 'react';
 import { CartContext } from '../../context/CartContext';
 

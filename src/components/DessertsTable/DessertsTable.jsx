@@ -1,6 +1,4 @@
 import { Box } from "@chakra-ui/react"
-
-// importing styles
 import { defaultStyle, smallStyle } from "./Styles"
 import './DessertsTable.css'
 

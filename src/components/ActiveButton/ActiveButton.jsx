@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
 import { CartContext } from '../../context/CartContext';
-
 import './ActiveButton.css'
 
 const ActiveButton = ({setActive, createProduct}) => {

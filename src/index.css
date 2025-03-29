@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .title-big {
   font-size: 2em;
 }
@@ -14,7 +20,7 @@
   color: hsl(14, 65%, 9%);
 }
 
-.dessertCategory, .cartItemPrice, .cartItemDeleteIcon, .cartOrderTotal {
+.dessertCategory, .cartItemPrice, .cartItemDeleteIcon, .cartOrderTotal, .modalText {
   color: hsl(12, 20%, 44%);
 }
 
@@ -35,7 +41,7 @@
   background-color: hsl(0, 0%, 100%)
 }
 
-.cart, .modal {
+.cart {
   padding: 2em;
 }
 
@@ -46,3 +52,12 @@
 .semiBold {
   font-weight: 500;
 }
+
+.hidden {
+  display: none;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+

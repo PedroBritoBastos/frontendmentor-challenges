@@ -1,9 +1,7 @@
 import CartItem from "./CartItem"
-
-import './CartList.css'
-
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import './CartList.css'
 
 const CartList = () => {
   const {productList} = useContext(CartContext);

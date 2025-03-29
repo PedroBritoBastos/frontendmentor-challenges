@@ -5,14 +5,16 @@ import './index.css'
 import App from './App.jsx'
 
 import { CartContextProvider } from './context/CartContext.jsx'
-
+import { ModalContextProvider } from './context/ModalContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider>
-      <CartContextProvider>
-        <App />
-      </CartContextProvider>
+      <ModalContextProvider>
+        <CartContextProvider>
+          <App />
+        </CartContextProvider>
+      </ModalContextProvider>
     </Provider>
   </StrictMode>,
 )

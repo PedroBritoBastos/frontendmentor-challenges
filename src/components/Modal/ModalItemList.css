@@ -1,0 +1,5 @@
+.modalItemList {
+  padding: 1em;
+  max-height: 300px;
+  overflow-y: auto;
+}

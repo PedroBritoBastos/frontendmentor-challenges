@@ -1,4 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; /* Remove o padding que estava atrapalhando */
+}
+
 body {
-  padding: 1.5em;
-  background-color: hsl(20, 50%, 98%);
+  padding: 1.5em; /* Mantém o padding, mas sem afetar o overlay */
+  position: relative;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.26);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 9999; 
+  padding: 1em;
 }

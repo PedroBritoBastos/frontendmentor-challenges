@@ -1,0 +1,14 @@
+.modalItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  align-items: center;
+  border-bottom: 1px solid hsla(12, 20%, 44%, 0.164);
+  padding-bottom: 1em;
+}
+
+.modalImage {
+  width: 70px;
+  height: 70px;
+}
+

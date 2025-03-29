@@ -1,15 +1,8 @@
 import { Box } from "@chakra-ui/react"
-
-// hooks
 import { useState, useRef } from "react"
-
-// style
-import './DessertCard.css'
-
-// components
 import AddButton from "../AddButton/AddButton"
 import ActiveButton from "../ActiveButton/ActiveButton"
-
+import './DessertCard.css'
 
 const DessertCard = ({image, category, name, price}) => {
 
@@ -29,7 +22,6 @@ const DessertCard = ({image, category, name, price}) => {
     return productInfo;
   }
   
-
   return (
     <>
       <Box marginBottom={"4em"} >
